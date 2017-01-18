@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.capstone08.springstudy.postviewTest.PostViewControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-01-18T04:45:33" hostname="chan-ThinkPad-T440" time="0.067">
+  <properties/>
+  <testcase name="deletePostTest" classname="com.capstone08.springstudy.postviewTest.PostViewControllerTest" time="0.031"/>
+  <testcase name="moveToModifyTest" classname="com.capstone08.springstudy.postviewTest.PostViewControllerTest" time="0.035"/>
+  <system-out><![CDATA[2017-01-18 13:45:33.816  INFO 3027 --- [    Test worker] ilder$StaticRequestMappingHandlerMapping : Mapped "{[/postview/modify/{id}],methods=[GET]}" onto public java.lang.String com.capstone08.springstudy.controller.PostViewController.moveToModify(int,org.springframework.ui.Model)
+2017-01-18 13:45:33.816  INFO 3027 --- [    Test worker] ilder$StaticRequestMappingHandlerMapping : Mapped "{[/postview/del/{id}]}" onto public java.lang.String com.capstone08.springstudy.controller.PostViewController.deletePost(int)
+2017-01-18 13:45:33.830  INFO 3027 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@2b557868
+2017-01-18 13:45:33.834  INFO 3027 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2017-01-18 13:45:33.835  INFO 3027 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-01-18 13:45:33.835  INFO 3027 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
+2017-01-18 13:45:33.848  INFO 3027 --- [    Test worker] ilder$StaticRequestMappingHandlerMapping : Mapped "{[/postview/modify/{id}],methods=[GET]}" onto public java.lang.String com.capstone08.springstudy.controller.PostViewController.moveToModify(int,org.springframework.ui.Model)
+2017-01-18 13:45:33.849  INFO 3027 --- [    Test worker] ilder$StaticRequestMappingHandlerMapping : Mapped "{[/postview/del/{id}]}" onto public java.lang.String com.capstone08.springstudy.controller.PostViewController.deletePost(int)
+2017-01-18 13:45:33.866  INFO 3027 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@3509cfd5
+2017-01-18 13:45:33.874  INFO 3027 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2017-01-18 13:45:33.875  INFO 3027 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-01-18 13:45:33.875  INFO 3027 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

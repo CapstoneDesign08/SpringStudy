@@ -44,12 +44,12 @@
         </td>
         <td>
             <a th:href="@{'/postview/modify/' + ${post.id}}">
-                <input type="button" value="수정" />
+                <input type="button" value="수정" class="modify" />
             </a>
         </td>
         <td>
-            <a th:href="@{'/postview/del/' + ${post.id}}" class="del">
-                <input type="button" value="삭제" />
+            <a th:href="@{'/postview/del/' + ${post.id}}" >
+                <input type="button" value="삭제" class="del"/>
             </a>
         </td>
     </tr>

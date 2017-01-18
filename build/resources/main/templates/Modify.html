@@ -11,19 +11,19 @@
 <body>
 <form method="POST" th:action="@{'/modify/' + ${post.id}}" cellpadding="0" cellspacing="0" border="0" width="710">
     <tr>
-        <div class="nick container">
+        <div class="nick_container">
             <input type="text" name="nick" size="30" placeholder="닉네임을 입력하세요." th:value="${post.nick}"/>
         </div>
         <input type="hidden" name="date" th:value="${post.date}"/>
         <input type="hidden" name="hit" th:value="${post.hit}"/>
     </tr>
     <tr>
-        <div class="subject container">
+        <div class="subject_container">
             <input type="text" name="subject" size="97" placeholder="제목을 입력하세요." th:value="${post.subject}"/>
         </div>
     </tr>
     <tr>
-        <div class="content container">
+        <div class="content_container">
             <input type="text" name="content" size="97" style="height: 600px" placeholder="내용을 입력하세요." th:value="${post.content}"/>
         </div>
     </tr>
@@ -31,12 +31,12 @@
     <tr>
         <td align="left">
             <a th:href="@{'/postview/' + ${post.id}}">
-                <input type="button" value="뒤로"/>
+                <input type="button" value="뒤로" class="back"/>
             </a>
         </td>
         <td>
             <a>
-                <input type="submit" value="수정" />
+                <input type="submit" value="수정" class="com_modify"/>
                 <input type="hidden" name="id" th:value="${post.id}"/>
             </a>
         </td>

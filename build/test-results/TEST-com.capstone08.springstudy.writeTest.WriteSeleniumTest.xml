@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.capstone08.springstudy.writeTest.WriteSeleniumTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-01-18T04:45:40" hostname="chan-ThinkPad-T440" time="6.762">
+  <properties/>
+  <testcase name="writeBackTest" classname="com.capstone08.springstudy.writeTest.WriteSeleniumTest" time="1.864"/>
+  <testcase name="writePostViewTest" classname="com.capstone08.springstudy.writeTest.WriteSeleniumTest" time="2.369"/>
+  <testcase name="writeHomeTest" classname="com.capstone08.springstudy.writeTest.WriteSeleniumTest" time="2.527"/>
+  <system-out><![CDATA[2017-01-18 13:45:40.679  INFO 3027 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.capstone08.springstudy.writeTest.WriteSeleniumTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-01-18 13:45:40.690  INFO 3027 --- [    Test worker] WebAppIntegrationTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-01-18 13:45:40.691  INFO 3027 --- [    Test worker] WebAppIntegrationTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6eb860e4, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1e3eb998, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@60532e17, org.springframework.test.context.support.DirtiesContextTestExecutionListener@55d4f979, org.springframework.test.context.transaction.TransactionalTestExecutionListener@78c61c67, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@135f989e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6a852f74, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@18e81c6c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@50850e32, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3ff1e7d4, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7ccc91d1, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@241ff958]
+/home/chan/SpringStudy
+2017-01-18 13:45:40.712  INFO 3027 --- [    Test worker] ilder$StaticRequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.capstone08.springstudy.controller.HomeController.board(org.springframework.ui.Model)
+2017-01-18 13:45:40.713  INFO 3027 --- [    Test worker] ilder$StaticRequestMappingHandlerMapping : Mapped "{[/postview/{id}]}" onto public java.lang.String com.capstone08.springstudy.controller.HomeController.moveToPostView(int,org.springframework.ui.ModelMap)
+2017-01-18 13:45:40.713  INFO 3027 --- [    Test worker] ilder$StaticRequestMappingHandlerMapping : Mapped "{[/write]}" onto public java.lang.String com.capstone08.springstudy.controller.HomeController.moveToWrite()
+2017-01-18 13:45:40.729  INFO 3027 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@631354c3
+2017-01-18 13:45:40.740  INFO 3027 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2017-01-18 13:45:40.741  INFO 3027 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-01-18 13:45:40.741  INFO 3027 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
+Hibernate: select post0_.id as id1_0_, post0_.content as content2_0_, post0_.date as date3_0_, post0_.hit as hit4_0_, post0_.nick as nick5_0_, post0_.subject as subject6_0_ from post post0_ order by post0_.id desc
+/home/chan/SpringStudy
+2017-01-18 13:45:42.568  INFO 3027 --- [    Test worker] ilder$StaticRequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.capstone08.springstudy.controller.HomeController.board(org.springframework.ui.Model)
+2017-01-18 13:45:42.569  INFO 3027 --- [    Test worker] ilder$StaticRequestMappingHandlerMapping : Mapped "{[/postview/{id}]}" onto public java.lang.String com.capstone08.springstudy.controller.HomeController.moveToPostView(int,org.springframework.ui.ModelMap)
+2017-01-18 13:45:42.569  INFO 3027 --- [    Test worker] ilder$StaticRequestMappingHandlerMapping : Mapped "{[/write]}" onto public java.lang.String com.capstone08.springstudy.controller.HomeController.moveToWrite()
+2017-01-18 13:45:42.584  INFO 3027 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@75903247
+2017-01-18 13:45:42.588  INFO 3027 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2017-01-18 13:45:42.588  INFO 3027 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-01-18 13:45:42.589  INFO 3027 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 1 ms
+Hibernate: insert into post (content, date, hit, nick, subject) values (?, ?, ?, ?, ?)
+Hibernate: select post0_.id as id1_0_, post0_.content as content2_0_, post0_.date as date3_0_, post0_.hit as hit4_0_, post0_.nick as nick5_0_, post0_.subject as subject6_0_ from post post0_ where post0_.id=?
+Hibernate: update post set content=?, date=?, hit=?, nick=?, subject=? where id=?
+/home/chan/SpringStudy
+2017-01-18 13:45:44.938  INFO 3027 --- [    Test worker] ilder$StaticRequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.capstone08.springstudy.controller.HomeController.board(org.springframework.ui.Model)
+2017-01-18 13:45:44.939  INFO 3027 --- [    Test worker] ilder$StaticRequestMappingHandlerMapping : Mapped "{[/postview/{id}]}" onto public java.lang.String com.capstone08.springstudy.controller.HomeController.moveToPostView(int,org.springframework.ui.ModelMap)
+2017-01-18 13:45:44.939  INFO 3027 --- [    Test worker] ilder$StaticRequestMappingHandlerMapping : Mapped "{[/write]}" onto public java.lang.String com.capstone08.springstudy.controller.HomeController.moveToWrite()
+2017-01-18 13:45:44.953  INFO 3027 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@12ce3de2
+2017-01-18 13:45:44.957  INFO 3027 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2017-01-18 13:45:44.957  INFO 3027 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-01-18 13:45:44.957  INFO 3027 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
+Hibernate: insert into post (content, date, hit, nick, subject) values (?, ?, ?, ?, ?)
+Hibernate: select post0_.id as id1_0_, post0_.content as content2_0_, post0_.date as date3_0_, post0_.hit as hit4_0_, post0_.nick as nick5_0_, post0_.subject as subject6_0_ from post post0_ where post0_.id=?
+Hibernate: update post set content=?, date=?, hit=?, nick=?, subject=? where id=?
+Hibernate: select post0_.id as id1_0_, post0_.content as content2_0_, post0_.date as date3_0_, post0_.hit as hit4_0_, post0_.nick as nick5_0_, post0_.subject as subject6_0_ from post post0_ order by post0_.id desc
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 2.27.440175 (9bc1d90b8bfa4dd181fbbf769a5eb5e575574320) on port 18331
+Only local connections are allowed.
+Starting ChromeDriver 2.27.440175 (9bc1d90b8bfa4dd181fbbf769a5eb5e575574320) on port 24866
+Only local connections are allowed.
+Starting ChromeDriver 2.27.440175 (9bc1d90b8bfa4dd181fbbf769a5eb5e575574320) on port 3291
+Only local connections are allowed.
+]]></system-err>
+</testsuite>

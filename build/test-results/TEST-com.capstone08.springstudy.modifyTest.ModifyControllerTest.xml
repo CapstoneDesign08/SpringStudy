@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.capstone08.springstudy.modifyTest.ModifyControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-01-18T04:45:40" hostname="chan-ThinkPad-T440" time="0.077">
+  <properties/>
+  <testcase name="modifyExceptionTest" classname="com.capstone08.springstudy.modifyTest.ModifyControllerTest" time="0.042"/>
+  <testcase name="modifyPostTest" classname="com.capstone08.springstudy.modifyTest.ModifyControllerTest" time="0.033"/>
+  <system-out><![CDATA[2017-01-18 13:45:40.530  INFO 3027 --- [    Test worker] ilder$StaticRequestMappingHandlerMapping : Mapped "{[/modify/{id}],methods=[POST]}" onto public java.lang.String com.capstone08.springstudy.controller.ModifyController.modifyPost(int,com.capstone08.springstudy.model.Post) throws com.capstone08.springstudy.exception.FoundBlankException
+2017-01-18 13:45:40.543  INFO 3027 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@e3defe6
+2017-01-18 13:45:40.550  INFO 3027 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2017-01-18 13:45:40.550  INFO 3027 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-01-18 13:45:40.550  INFO 3027 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
+There was a Exception foundException 호출There was a Exception foundException 호출2017-01-18 13:45:40.576  INFO 3027 --- [    Test worker] ilder$StaticRequestMappingHandlerMapping : Mapped "{[/modify/{id}],methods=[POST]}" onto public java.lang.String com.capstone08.springstudy.controller.ModifyController.modifyPost(int,com.capstone08.springstudy.model.Post) throws com.capstone08.springstudy.exception.FoundBlankException
+2017-01-18 13:45:40.595  INFO 3027 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@39f5a94b
+2017-01-18 13:45:40.599  INFO 3027 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2017-01-18 13:45:40.599  INFO 3027 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-01-18 13:45:40.600  INFO 3027 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 1 ms
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

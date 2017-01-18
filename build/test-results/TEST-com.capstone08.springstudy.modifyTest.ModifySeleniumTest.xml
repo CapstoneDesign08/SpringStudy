@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.capstone08.springstudy.modifyTest.ModifySeleniumTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-01-18T04:45:33" hostname="chan-ThinkPad-T440" time="6.62">
+  <properties/>
+  <testcase name="modifyPostViewTest" classname="com.capstone08.springstudy.modifyTest.ModifySeleniumTest" time="2.458"/>
+  <testcase name="modifyBackTest" classname="com.capstone08.springstudy.modifyTest.ModifySeleniumTest" time="2.238"/>
+  <testcase name="modifyDefaultTest" classname="com.capstone08.springstudy.modifyTest.ModifySeleniumTest" time="1.92"/>
+  <system-out><![CDATA[2017-01-18 13:45:33.886  INFO 3027 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.capstone08.springstudy.modifyTest.ModifySeleniumTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-01-18 13:45:33.895  INFO 3027 --- [    Test worker] WebAppIntegrationTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-01-18 13:45:33.896  INFO 3027 --- [    Test worker] WebAppIntegrationTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@28fa6ab8, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@63f876c1, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@37535aa2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@433902f3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@386d0f86, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@18032834, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3528f7dc, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3e8d4510, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6e4c7c78, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6f8fbb0d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1d6b2737, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@491a544f]
+/home/chan/SpringStudy
+2017-01-18 13:45:33.907  INFO 3027 --- [    Test worker] ilder$StaticRequestMappingHandlerMapping : Mapped "{[/modify/{id}],methods=[POST]}" onto public java.lang.String com.capstone08.springstudy.controller.ModifyController.modifyPost(int,com.capstone08.springstudy.model.Post) throws com.capstone08.springstudy.exception.FoundBlankException
+2017-01-18 13:45:33.920  INFO 3027 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@37d1f0fc
+2017-01-18 13:45:33.927  INFO 3027 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2017-01-18 13:45:33.927  INFO 3027 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-01-18 13:45:33.927  INFO 3027 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
+Hibernate: select post0_.id as id1_0_, post0_.content as content2_0_, post0_.date as date3_0_, post0_.hit as hit4_0_, post0_.nick as nick5_0_, post0_.subject as subject6_0_ from post post0_ where post0_.id=?
+2017-01-18 13:45:35.737  WARN 3027 --- [o-auto-1-exec-6] o.springframework.validation.DataBinder  : Skipping URI variable 'id' since the request contains a bind value with the same name.
+Hibernate: select post0_.id as id1_0_0_, post0_.content as content2_0_0_, post0_.date as date3_0_0_, post0_.hit as hit4_0_0_, post0_.nick as nick5_0_0_, post0_.subject as subject6_0_0_ from post post0_ where post0_.id=?
+Hibernate: update post set content=?, date=?, hit=?, nick=?, subject=? where id=?
+Hibernate: select post0_.id as id1_0_, post0_.content as content2_0_, post0_.date as date3_0_, post0_.hit as hit4_0_, post0_.nick as nick5_0_, post0_.subject as subject6_0_ from post post0_ where post0_.id=?
+Hibernate: update post set content=?, date=?, hit=?, nick=?, subject=? where id=?
+/home/chan/SpringStudy
+2017-01-18 13:45:36.366  INFO 3027 --- [    Test worker] ilder$StaticRequestMappingHandlerMapping : Mapped "{[/modify/{id}],methods=[POST]}" onto public java.lang.String com.capstone08.springstudy.controller.ModifyController.modifyPost(int,com.capstone08.springstudy.model.Post) throws com.capstone08.springstudy.exception.FoundBlankException
+2017-01-18 13:45:36.384  INFO 3027 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@a0ca128
+2017-01-18 13:45:36.394  INFO 3027 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2017-01-18 13:45:36.394  INFO 3027 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-01-18 13:45:36.395  INFO 3027 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 1 ms
+Hibernate: select post0_.id as id1_0_, post0_.content as content2_0_, post0_.date as date3_0_, post0_.hit as hit4_0_, post0_.nick as nick5_0_, post0_.subject as subject6_0_ from post post0_ where post0_.id=?
+Hibernate: select post0_.id as id1_0_, post0_.content as content2_0_, post0_.date as date3_0_, post0_.hit as hit4_0_, post0_.nick as nick5_0_, post0_.subject as subject6_0_ from post post0_ where post0_.id=?
+Hibernate: update post set content=?, date=?, hit=?, nick=?, subject=? where id=?
+/home/chan/SpringStudy
+2017-01-18 13:45:38.607  INFO 3027 --- [    Test worker] ilder$StaticRequestMappingHandlerMapping : Mapped "{[/modify/{id}],methods=[POST]}" onto public java.lang.String com.capstone08.springstudy.controller.ModifyController.modifyPost(int,com.capstone08.springstudy.model.Post) throws com.capstone08.springstudy.exception.FoundBlankException
+2017-01-18 13:45:38.615  INFO 3027 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@4af65166
+2017-01-18 13:45:38.620  INFO 3027 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2017-01-18 13:45:38.621  INFO 3027 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-01-18 13:45:38.621  INFO 3027 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
+Hibernate: select post0_.id as id1_0_, post0_.content as content2_0_, post0_.date as date3_0_, post0_.hit as hit4_0_, post0_.nick as nick5_0_, post0_.subject as subject6_0_ from post post0_ where post0_.id=?
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 2.27.440175 (9bc1d90b8bfa4dd181fbbf769a5eb5e575574320) on port 8121
+Only local connections are allowed.
+Starting ChromeDriver 2.27.440175 (9bc1d90b8bfa4dd181fbbf769a5eb5e575574320) on port 8899
+Only local connections are allowed.
+Starting ChromeDriver 2.27.440175 (9bc1d90b8bfa4dd181fbbf769a5eb5e575574320) on port 15931
+Only local connections are allowed.
+]]></system-err>
+</testsuite>
