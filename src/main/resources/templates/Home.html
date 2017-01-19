@@ -19,25 +19,34 @@
         <td width="60">조회</td>
     </tr>
     </thead>
+    <!-- 주석처리된 부분을 채우시오. html구조는 건드리지 마시오. -->
     <tbody class="post container">
-    <div th:each="post : ${posts}" class="ps">
+
+    <!-- div태그완성  post값을 전달받을수 있도록  -->
+    <div     class="ps" >
         <tr>
-            <td class="bbsNo">
-                <p th:text="${post.id}">null</p>
+            <td class="bbsNo" align="center">
+                <!--p태그완성 게시물번호 "id"가 나타나도록하시오. -->
+                <p   ></p>
             </td>
-            <td class="bbsSubject">
-                <a th:href="@{'/postview/' + ${post.id}}">
-                    <p th:text="${post.subject}">null</p>
+            <td class="bbsSubject" align="center">
+                <!--a태그완성 게시물의 제목클릭시 "/postview/{id}" 주소로 이동하도록 하시오 -->
+                <a  >
+                    <!--p태그완성 게시물제목 "subject"가 나타나도록 하시오. -->
+                    <p   ></p>
                 </a>
             </td>
-            <td class="bbsNick">
-                <p th:text="${post.nick}">null</p>
+            <td class="bbsNick" align="center">
+                <!--p태그완성   게시물글쓴이 "nick"이 나타나도록 하시오. -->
+                <p   ></p>
             </td>
-            <td class="date">
-                <p th:text="${post.date}">null</p>
+            <td class="date" align="center">
+                <!--p태그완성   게시물등록일 "date"가 나타나도록 하시오. -->
+                <p   ></p>
             </td>
-            <td class="hit">
-                <p th:text="${post.hit}">null</p>
+            <td class="hit" align="center">
+                <!--p태그완성 게시물 조회수 "hit"가 나타나도록 하시오. -->
+                <p   ></p>
             </td>
         </tr>
     </div>
@@ -45,9 +54,9 @@
 </table>
 <table class="writeBtn" cellpadding="0" cellspacing="0" border="0" width="710">
     <tr>
-        <td align="left">          </td>
         <td align="right">
-            <a th:href="@{'/write'}">
+            <!--a태그완성   "글쓰기"버튼 클릭시 "/write"주소로 이동하도록하시오. -->
+            <a   >
                 <input type="button" value="글쓰기"/>
             </a>
         </td>

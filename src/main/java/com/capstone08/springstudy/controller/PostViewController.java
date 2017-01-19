@@ -1,11 +1,8 @@
 package com.capstone08.springstudy.controller;
 
 import com.capstone08.springstudy.data.PostRepository;
-import com.capstone08.springstudy.model.Post;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -15,18 +12,21 @@ public class PostViewController {
     @Autowired
     private PostRepository postRepository;
 
-      @RequestMapping("/postview/del/{id}")
-    public String deletePost(@PathVariable int id) {
-        postRepository.delete(id);
+    // "PostView"페이지에서 삭제버튼을 클릭하면 "/postview/del/{id}"로 이동하는데
+    // id에 해당하는 객체가 삭제되도록 만드시오. 그리고 삭제가 완료되면 "Home"페이지로 이동하도록 하시오.
+    @RequestMapping("/postview/del/{id}")
+    public String deletePost() {
 
-        return "redirect:/";
+
+
+        return "";
     }
 
+    // "PostView"페이지에서 수정버튼을 클릭하면 "/postview/modify/{id}"로 이동하는데
+    // id에 해당하는 객체의 "Modify"페이지로 이동하도록 만드시오.
     @RequestMapping(value = "/postview/modify/{id}", method = RequestMethod.GET)
-    public String moveToModify(@PathVariable int id, Model model) {
-        Post post = postRepository.findById(id);
-        model.addAttribute("post", post);
+    public String moveToModify () {
 
-        return "Modify";
+        return "";
     }
 }
