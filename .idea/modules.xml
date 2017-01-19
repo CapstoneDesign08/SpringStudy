@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SpringMVCBoard.iml" filepath="$PROJECT_DIR$/.idea/modules/SpringMVCBoard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SpringMVCBoard_main.iml" filepath="$PROJECT_DIR$/.idea/modules/SpringMVCBoard_main.iml" group="SpringMVCBoard" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SpringMVCBoard_test.iml" filepath="$PROJECT_DIR$/.idea/modules/SpringMVCBoard_test.iml" group="SpringMVCBoard" />
+    </modules>
+  </component>
+</project>

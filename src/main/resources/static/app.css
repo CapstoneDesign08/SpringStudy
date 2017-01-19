@@ -1,0 +1,23 @@
+.bbsNo {
+    text-align: center;
+}
+
+.bbsSubject {
+    padding-left: 3%;
+}
+
+.bbsNick {
+    text-align: center;
+}
+
+.hit {
+    text-align: center;
+}
+
+.writeBtn {
+    padding-top: 5px;
+}
+
+.backBtn {
+    padding-top: 5px;
+}
