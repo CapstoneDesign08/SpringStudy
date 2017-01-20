@@ -97,7 +97,7 @@ public class ModifySeleniumTest {
 
         driver = new PhantomJSDriver(caps);
 
-        driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
     }
 
     @Test       // modify 페이지로 왔을때 default값이 제대로 들어가있는가 (그전에 있던값)

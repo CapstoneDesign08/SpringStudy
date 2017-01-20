@@ -101,7 +101,7 @@ public class WriteSeleniumTest {
 
         driver = new PhantomJSDriver(caps);
 
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
     }
 
     @Test   // postview 페이지로 넘어갔을때 입력한 값이 제대로 들어갔는가

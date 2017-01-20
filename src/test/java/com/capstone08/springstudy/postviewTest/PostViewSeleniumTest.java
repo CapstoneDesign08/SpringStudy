@@ -98,7 +98,7 @@ public class PostViewSeleniumTest {
 
         driver = new PhantomJSDriver(caps);
 
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
     }
 
     @Test       // post객체 하나 클릭시 입력한 값이 제대로 들어가는가
@@ -181,7 +181,7 @@ public class PostViewSeleniumTest {
             stmt.executeUpdate(query);
         }
         catch (Exception e) {
-
+            throw e;
         }
         finally {
             query = "TRUNCATE TABLE post;" ;

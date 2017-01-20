@@ -83,7 +83,7 @@ public class HomeSeleniumTest {
 
         driver = new PhantomJSDriver(caps);
 
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
     }
 
     @Test       // post의 객체의 id, 제목, 닉네임, 해당조회수가 적용되었나
