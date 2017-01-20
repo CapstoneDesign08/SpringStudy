@@ -37,14 +37,14 @@ public class PostViewControllerTest {
     public void deletePostTest() throws Exception {
         doAnswer(invocation -> {
             Post post = (Post) invocation.getArguments()[0];
-            post.setId(2);
+            post.setId(3826);
             return null;
         }).when(postRepository).save(any(Post.class));
 
         mockMvc.perform(
-                get("/postview/del/2")
+                get("/postview/del/3826")
         ).andExpect(redirectedUrl("/"));
-        verify(postRepository, times(1)).delete(2);
+        verify(postRepository, times(1)).delete(3826);
 
     }
 
@@ -52,10 +52,18 @@ public class PostViewControllerTest {
     public void moveToModifyTest() throws Exception {
      //   Post post= new Post.PostBuilder(2).withNick("NICK").withSubject("SUBJECT").withContent("CONTENT").withDate("2017/01/08").withHit(10).build();
     //    when(postRepository.findById(2)).thenReturn(post);
+        doAnswer(invocation -> {
+            Post post = (Post) invocation.getArguments()[0];
+            post.setId(1);
+            return null;
+        }).when(postRepository).save(any(Post.class));
 
         mockMvc.perform(get("/postview/modify/1"))
                 .andExpect(status().isOk())
                 .andExpect(view().name("Modify"));
+
+        verify(postRepository, times(1)).findById(1);
+
     }
 
 }

@@ -8,28 +8,37 @@
 
     <title>게시물</title>
 </head>
+<!-- 주석처리된 부분을 채우시오. html구조는 건드리지 마시오. -->
 <body>
 <table cellpadding="0" cellspacing="0" border="0">
     <tbody>
     <tr height="20" bgcolor="#EDEDED">
-        <td width="200" align="left" class="id_nick">
-            <p style="padding-left: 10px" th:text="${post.id} + '   |   ' +  '작성자 : ' + ${post.nick}"></p>
+        <td width="200" align="left" class="id">
+            <!--p태그완성  id값이 나타나도록 완성하시오.   -->
+            <p style="padding-left: 10px"   ></p>
+        </td>
+        <td width="200" class="nick">
+            <!--p태그완성  nick값이 나타나도록 완성하시오.   -->
+            <p style="padding-left: 10px"   ></p>
         </td>
         <td width="350" align="center">
 
         </td>
         <td width="150" align="right" class="hit">
-            <p style="padding-right: 10px" th:text="'조회수 ' + ${post.hit}"></p>
+            <!--p태그완성  hit값이 나타나도록 완성하시오.   -->
+            <p style="padding-right: 10px"   ></p>
         </td>
     </tr>
     <tr>
         <td colspan="3" class="subject">
-            <p style="padding-left: 15px" th:text="'제목 : ' +${post.subject}"></p>
+            <!--p태그완성  subject값이 나타나도록 완성하시오.   -->
+            <p style="padding-left: 15px"     ></p>
         </td>
     </tr>
     <tr height="500" bgcolor="#EDEDED">
         <td colspan="3" class="content">
-            <p style="padding: 15px" th:text="${post.content}"></p>
+            <!--p태그완성  content값이 나타나도록 완성하시오.   -->
+            <p style="padding: 15px"      ></p>
         </td>
     </tr>
     </tbody>
@@ -38,17 +47,20 @@
 <table class="backBtn" cellpadding="0" cellspacing="0" border="0">
     <tr>
         <td align="left">
-            <a th:href="@{'/'}">
+            <!-- a태그완성  "뒤로" 버튼을 클릭하면 "/" 주소로 이동하도록 만드시오. -->
+            <a   >
                 <input type="button" value="뒤로" class="back"/>
             </a>
         </td>
         <td>
-            <a th:href="@{'/postview/modify/' + ${post.id}}">
+            <!-- a태그완성  "수정" 버튼을 클릭하면 "/postview/modify/{id}" 주소로 이동하도록 만드시오. -->
+            <a     >
                 <input type="button" value="수정" class="modify" />
             </a>
         </td>
         <td>
-            <a th:href="@{'/postview/del/' + ${post.id}}" >
+            <!-- a태그완성  "삭제" 버튼을 클릭하면 "/postview/del/{id}" 주소로 이동하도록 만드시오. -->
+            <a     >
                 <input type="button" value="삭제" class="del"/>
             </a>
         </td>

@@ -130,6 +130,31 @@ public class WriteSeleniumTest {
                 .andExpect(view().name("Home"));
     }
 
+    @Test   //write에서 post객체를 생성하면 date가 오늘날짜로 설정되는가
+    public void writeDateTest() throws Exception {
+
+        String query = "TRUNCATE TABLE post;" ;
+        stmt.executeUpdate(query);
+
+        String baseURL = "http://localhost:8080"  + "/write";
+        driver.get(baseURL);
+
+        driver.findElement(By.name("nick")).sendKeys("NICK");
+        driver.findElement(By.name("subject")).sendKeys("SUBJECT");
+        driver.findElement(By.name("content")).sendKeys("CONTENT");
+        driver.findElement(By.tagName("form")).submit();
+
+        baseURL = "http://localhost:8080/";
+        driver.get(baseURL);
+
+        Date d = new Date();
+        SimpleDateFormat today = new SimpleDateFormat("yyyy/MM/dd");
+
+        WebElement td = driver.findElement(By.className("date"));
+        assertEquals(today.format(d), td.getText());
+
+    }
+
     @Test       // 객체가 생성되면 Home에 제대로 반영되는가
     public void writeHomeTest() throws Exception {
         String query = "TRUNCATE TABLE post;" ;

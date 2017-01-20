@@ -18,27 +18,27 @@ public class HomeController {
     @Autowired
     private PostRepository postRepository;
 
+
+    // Home화면에서 등록된 모든 게시물들의 리스트들을 id의 '내림차순'으로 잘 보여줄수 있도록 채우시오.
+    // model전송시 반드시 "posts"라는 키 사용
     @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String board(Model model) {
-        List<Post> postList = postRepository.findAllByOrderByIdDesc();
-        model.addAttribute("posts", postList);
+    public String board() {
 
         return "Home";
     }
 
+    // 주소 "/write"로 가면 "Write"페이지로 이동하게 만드시오.
     @RequestMapping("/write")
     public String moveToWrite(){
 
-        return "Write";
+        return "";
     }
 
+    // 등록된 post객체의 id를 이용하여 "/postview/{id}"로 가면 "Postview"페이지로 이동하게 만드시오.
+    // ModelMap전송시 반드시 "post"라는 키 사용
     @RequestMapping("/postview/{id}")
-    public String moveToPostView(@PathVariable int id, ModelMap modelMap){
-        Post post = postRepository.findById(id);
-        post.setHit();
-        postRepository.save(post);
-        modelMap.put("post", post);
+    public String moveToPostView( ){
 
-        return "PostView";
+        return "";
     }
 }

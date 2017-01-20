@@ -51,8 +51,9 @@ public class WriteControllerTest {
                         .param("content", "CONTENT")
         ).andExpect(redirectedUrl("/postview/2"));
         verify(postRepository).save(any(Post.class));
-
     }
+
+
 
     @Test       // 제목과 닉네임에 공백이 들어간채로 등록하면 Error 페이지로 제대로 이동하는가
     public void writeExceptionTest() throws Exception {
@@ -67,6 +68,8 @@ public class WriteControllerTest {
                 post("/write")
                         .param("nick", "")
         ).andExpect(view().name("ErrorPage"));
+        verify(postRepository).save(any(Post.class));
+
 
     }
 

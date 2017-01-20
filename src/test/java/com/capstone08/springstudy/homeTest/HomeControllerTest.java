@@ -39,7 +39,6 @@ public class HomeControllerTest {
 
     @Test       // post객체 리스트가 제대로 보여주는가(id내림차순으로)
     public void boardTest() throws Exception {
-
             List<Post> posts = Arrays.asList(
                     new Post.PostBuilder(1).withNick("NICK").withSubject("SUBJECT").withContent("CONTENT").withDate("2017/01/08").withHit(1).build(),
                     new Post.PostBuilder(2).withNick("HONG").withSubject("CAT").withContent("CONTENT").withDate("2017/01/08").withHit(1).build(),
@@ -64,13 +63,14 @@ public class HomeControllerTest {
 
     @Test   // PostView페이지로 이동할 수 있는가
     public void moveToPostViewTest() throws Exception {
-        Post post= new Post.PostBuilder(2).withNick("NICK").withSubject("SUBJECT").withContent("CONTENT").withDate("2017/01/08").withHit(10).build();
-        when(postRepository.findById(2)).thenReturn(post);
 
-        mockMvc.perform(get("/postview/2"))
-                .andExpect(view().name("PostView"))
-                .andExpect(model().attribute("post", post));
-        verify(postRepository).findById(2);
+            Post post = new Post.PostBuilder(2).withNick("NICK").withSubject("SUBJECT").withContent("CONTENT").withDate("2017/01/08").withHit(10).build();
+            when(postRepository.findById(2)).thenReturn(post);
+
+            mockMvc.perform(get("/postview/2"))
+                    .andExpect(view().name("PostView"))
+                    .andExpect(model().attribute("post", post));
+            verify(postRepository).findById(2);
 
     }
 

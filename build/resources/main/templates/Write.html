@@ -8,30 +8,34 @@
 
     <title>글쓰기</title>
 </head>
+<!-- 주석처리된 부분을 채우시오. html구조는 건드리지 마시오. -->
 <body>
-<form method="POST" th:action="@{/write}" cellpadding="0" cellspacing="0" border="0" width="710">
+<!-- form태그완성  값을 전달하기위해 "/write"주소에서 method의 속성값을 지정해주세요. -->
+<form  >
     <tr>
         <div class="nick container">
-            <input type="text" name="nick" size="30" placeholder="닉네임을 입력하세요."/>
+            <!-- 닉네임을 저장하기위해서 "nick"을 입력하도록 만드시오.  -->
         </div>
     </tr>
     <tr>
         <div class="subject container">
-            <input type="text" name="subject" size="97" placeholder="제목을 입력하세요."/>
+            <!-- 제목을 저장하기위해서 "subject"를 입력하도록 만드시오. -->
         </div>
     </tr>
     <tr>
         <div class="content container">
-            <input type="text" name="content" size="97" style="height: 600px" placeholder="내용을 입력하세요."/>
+            <!-- 내용을 저장하기위해서 "content"를 입력하도록 만드시오. -->
         </div>
     </tr>
 
     <tr>
-        <a th:href="@{'/'}">
+        <!-- a태그완성  "뒤로" 버튼을 클릭하면 "/" 주소로 이동하도록 만드시오. -->
+        <a  >
             <input type="button" value="뒤로" class="back"/>
         </a>
         <a>
-            <input type="submit" value="작성" class="submit"/>
+            <!--input태그완성   "작성"버튼 완성 -->
+            <input   value="작성" class="submit"/>
         </a>
     </tr>
 </form>
